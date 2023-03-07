@@ -50,6 +50,7 @@ body {
 
 .navbar .navbar-logo {
   font-size: 2rem;
+  padding: 0 0.5rem;
   font-weight: 700;
   color: var(--bac3);
   font-style: italic;
@@ -252,7 +253,7 @@ body {
   padding: 2rem;
   margin: none;
 
-  /* background-color: var(--sub2); */
+  background-color: var(--sub2);
   /* margin: 15% 0; */
 }
 .card-title h4 {
@@ -297,78 +298,72 @@ form .button #button {
   html {
     font-size: 75%;
   }
-  .main-bg .background {
-    display: none;
-  }
-}
 
-/* tablet */
-@media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
 
-  .navbar-extra #menu-icon {
-    display: inline-block;
-  }
-  .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: var(--sub);
-    width: 25rem;
-    height: 100vh;
-    transition: 0.3s;
-  }
-  .navbar-nav.active {
-    right: 0;
-  }
-  .navbar .navbar-nav a {
-    color: var(--bg);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
+    .navbar-extra #menu-icon {
+      display: inline-block;
+    }
+    .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: var(--sub);
+      width: 25rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+    .navbar-nav.active {
+      right: 0;
+    }
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
 
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
-  }
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
 
-  .main-bg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main-bg .background {
-    display: block;
-    width: 250px;
-  }
-  .about-image {
-    display: none;
-  }
-  .about-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact {
-    width: 55%;
-  }
-}
+    .main-bg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-bg .background {
+      display: block;
+      width: 250px;
+    }
+    .about-contact {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin: 0;
+    }
 
-/* Mobile Phone */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-  /* .navbar {
-    width: 50%; */
-  .contact .input,
-  .button {
-    height: 50px;
+    /* Mobile Phone */
+    @media (max-width: 450px) {
+      html {
+        font-size: 55%;
+      }
+      .contact .input,
+      .button {
+        height: 50px;
+      }
+    }
+    .main {
+      display: flex;
+    }
   }
 }
