@@ -302,6 +302,9 @@ form .button #button {
     html {
       font-size: 62.5%;
     }
+    * {
+      box-sizing: content-box;
+    }
 
     .navbar-extra #menu-icon {
       display: inline-block;
@@ -350,25 +353,49 @@ form .button #button {
       z-index: -1;
     }
 
-    .contact-card {
-      margin: 0;
+    .card-title p {
+      text-align: justify;
     }
-    .contact-card input,
-    select {
-      font-size: 75%;
-      gap: 0;
-      height: 25px;
+    .contact-card {
+      margin: 0px;
+      font-size: 8px;
+      padding: 1rem;
     }
 
-    /* Mobile Phone */
-    @media (max-width: 450px) {
-      html {
-        font-size: 55%;
-      }
-      .contact .input,
-      .button {
-        height: 50px;
-      }
+    .contact-card .input,
+    select {
+      font-size: 10px;
+      gap: 0;
+      height: 45px;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card form .button {
+      margin-top: 0.5rem;
+    }
+  }
+
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+    .about-contact .about .about-image {
+      height: 250px;
+      width: 300px;
+      margin-bottom: 1.5rem;
+    }
+    .contact {
+      width: 250px;
+      /* height: 275px; */
+    }
+    .contact .contact-card {
+      padding: 1.5rem;
+      padding: 0.5rem 1rem;
+    }
+    .contact .input,
+    .button {
+      height: 35px;
+      margin: 0px;
     }
   }
 }
