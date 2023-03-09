@@ -296,106 +296,115 @@ form .button #button {
   html {
     font-size: 75%;
   }
+}
 
-  /* tablet */
-  @media (max-width: 768px) {
-    html {
-      font-size: 62.5%;
-    }
-    * {
-      box-sizing: content-box;
-    }
-
-    .navbar-extra #menu-icon {
-      display: inline-block;
-    }
-    .navbar-nav {
-      position: absolute;
-      top: 100%;
-      right: -100%;
-      background-color: var(--sub);
-      width: 25rem;
-      height: 100vh;
-      transition: 0.3s;
-    }
-    .navbar-nav.active {
-      right: 0;
-    }
-    .navbar .navbar-nav a {
-      color: var(--bg);
-      display: block;
-      margin: 1.5rem;
-      padding: 0.5rem;
-      font-size: 2rem;
-    }
-    .navbar .navbar-nav a::after {
-      transform-origin: 0 0;
-    }
-
-    .navbar .navbar-nav a:hover::after {
-      transform: scaleX(0.2);
-    }
-
-    .main {
-      flex-direction: column;
-      align-items: center;
-    }
-    .about-contact {
-      /* display: flex; */
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      margin: 0;
-    }
-
-    .slide {
-      position: relative;
-      z-index: -1;
-    }
-
-    .card-title p {
-      text-align: justify;
-    }
-    .contact-card {
-      margin: 0px;
-      font-size: 8px;
-      padding: 1rem;
-    }
-
-    .contact-card .input,
-    select {
-      font-size: 10px;
-      gap: 0;
-      height: 45px;
-      margin-bottom: 0.5rem;
-    }
-    .contact-card form .button {
-      margin-top: 0.5rem;
-    }
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  * {
+    box-sizing: content-box;
   }
 
-  /* Mobile Phone */
-  @media (max-width: 450px) {
-    html {
-      font-size: 55%;
-    }
-    .about-contact .about .about-image {
-      height: 250px;
-      width: 300px;
-      margin-bottom: 1.5rem;
-    }
-    .contact {
-      width: 250px;
-      /* height: 275px; */
-    }
-    .contact .contact-card {
-      padding: 1.5rem;
-      padding: 0.5rem 1rem;
-    }
-    .contact .input,
-    .button {
-      height: 35px;
-      margin: 0px;
-    }
+  .navbar-extra #menu-icon {
+    display: inline-block;
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--sub);
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-contact {
+    /* display: flex; */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+
+  .slide {
+    position: relative;
+    z-index: -1;
+  }
+
+  .card-title p {
+    text-align: justify;
+  }
+  .contact-card {
+    margin: 0px;
+    font-size: 8px;
+    padding: 1rem;
+  }
+
+  .contact-card .input,
+  select {
+    font-size: 10px;
+    gap: 0;
+    height: 45px;
+    margin-bottom: 0.5rem;
+  }
+  .contact-card form .button {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar .navbar-extra .search-box {
+    padding: 0px;
+  }
+  .navbar .navbar-extra .search-box {
+    font-size: 1.1rem;
+  }
+  .about-contact .about {
+    width: 80%;
+  }
+  .about-contact .about .about-image {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+  .contact {
+    width: 250px;
+    /* height: 275px; */
+  }
+  .contact .contact-card {
+    padding: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .contact .input,
+  .button {
+    height: 35px;
+    margin: 0px;
   }
 }
